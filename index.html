@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca en línea accesible para todos">
+    <title>Biblioteca Online Accesible</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <nav aria-label="Menú principal"> 
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" aria-labelledby="titulo-inicio">
+        <h1 id="titulo-inicio">Bienvenidos a la Biblioteca Online</h1>
+        <p>Explora una amplia colección de libros electrónicos, artículos académicos y más, disponible para todos.</p>
+        <a href="#catalogo" class="boton" aria-label="Ir al catálogo de la biblioteca">Explorar Catálogo</a>
+    </section>
+
+    <!-- Sección de catálogo 
+    <section id="catalogo" aria-labelledby="titulo-catalogo">
+        <h2 id="titulo-catalogo">Catálogo de Libros</h2>
+        <form aria-label="Formulario de búsqueda" role="search">
+            <label for="buscar">Buscar en el catálogo:</label>
+            <input type="text" id="buscar" name="buscar" placeholder="Título, autor o tema" aria-label="Campo de búsqueda">
+            <button type="submit" aria-label="Botón de búsqueda">Buscar</button>
+        </form>-->
+        
+<!-- Sección de catálogo -->
+<section id="catalogo" aria-labelledby="titulo-catalogo">
+    <h2 id="titulo-catalogo">Catálogo de Libros</h2>
+    
+    <form aria-label="Formulario de búsqueda" role="search">
+        <label for="buscar">Buscar en el catálogo:</label>
+        <input type="text" id="buscar" name="buscar" placeholder="Título, autor o tema" aria-label="Campo de búsqueda">
+        <button type="submit" aria-label="Botón de búsqueda">Buscar</button>
+    </form>
+
+    <!-- Tabla accesible de libros -->
+    <!-- Tabla accesible de libros -->
+<h3>Lista de libros disponibles</h3>
+<table role="table" aria-label="Catálogo de libros disponibles">
+    <thead>
+        <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Género</th>
+            <th scope="col">Año</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>El Quijote</td>
+            <td>Miguel de Cervantes</td>
+            <td>Clásico</td>
+            <td>1605</td>
+        </tr>
+        <tr>
+            <td>Cien años de soledad</td>
+            <td>Gabriel García Márquez</td>
+            <td>Realismo mágico</td>
+            <td>1967</td>
+        </tr>
+        <tr>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>Distopía</td>
+            <td>1949</td>
+        </tr>
+        <tr>
+            <td>Orgullo y prejuicio</td>
+            <td>Jane Austen</td>
+            <td>Romántico</td>
+            <td>1813</td>
+        </tr>
+    </tbody>
+</table>
+
+              
+
+</section>
+
+        <!-- Lista de libros -->
+        <div class="lista-libros">
+            <article aria-labelledby="libro1-titulo">
+                <h3 id="libro1-titulo">El Quijote</h3>
+                <p>Autor: Miguel de Cervantes</p>
+                <p>Descripción: Una de las obras más importantes de la literatura española.</p>
+                <a href="https://www.educa.jcyl.es/educacyl/cm/gallery/Recursos%20Infinity/tematicas/webquijote/pdf/DONQUIJOTE_PARTE1.pdf" target="_blank" rel="noopener noreferrer">Leer más sobre El Quijote</a>
+            </article>
+
+            <article aria-labelledby="libro2-titulo">
+                <h3 id="libro2-titulo">Cien años de soledad</h3>
+                <p>Autor: Gabriel García Márquez</p>
+                <p>Descripción: Obra maestra del realismo mágico latinoamericano.</p>
+                <a href="https://www.planetadelibros.com.mx/libros_contenido_extra/37/36904_1_CIEN_ANOS_DE_SOLEDAD_50_aniv.pdf" target="_blank" rel="noopener noreferrer">Leer más sobre Cien Años de Soledad</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección acerca de -->
+    <section id="acerca" aria-labelledby="titulo-acerca">
+        <h2 id="titulo-acerca">Acerca de Nosotros</h2>
+        <p>Somos una biblioteca online que busca proporcionar acceso gratuito a conocimiento y cultura, con una experiencia accesible para todos los usuarios.</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Contacto</h2>
+        <form aria-label="Formulario de contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" aria-required="true">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" aria-required="true">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" aria-required="true"></textarea>
+
+            <button type="submit" aria-label="Enviar mensaje">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Biblioteca Online. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
